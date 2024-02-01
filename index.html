@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KYOTO</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- header starts -->
+
+   <section class="header">
+      <a href="#" class="logo">KYOTO</a>
+      <nav class="navbar">
+         <a href="#home">ГЛАВНАЯ</a>
+         <a href="#about">О НАС</a>
+         <a href="#food">ЕДА</a>
+         <a href="#gallery">ГАЛЕРЕЯ</a>
+         <a href="#Menu">МЕНЮ</a>
+         <a href="#order">ДОСТАВКА</a>
+         <a href="#blogs">БЛОГ</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+   <!-- header ends -->
+
+   <!-- home starts -->
+
+   <section class="home" id="home">
+      <div class="swiper home-slider">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide slide" style="background: url(img/slider.jpg) no-repeat;">
+               <div class="content">
+                  <span>KYOTO</span>
+                  <h3>Современная Японская Кухня</h3>
+               </div>
+            </div>
+            <div class="swiper-slide slide" style="background: url(img/slider1.jpg) no-repeat;">
+               <div class="content">
+                  <span>FOOD</span>
+                  <h3>aутентичные и приготовленные по традиционным рецептам блюда фокусируются на исключительных вкусах
+                     и красивой подаче</h3>
+                  <a asp-action="Menu" class="btn">ПОСМОТРЕТЬ</a>
+               </div>
+            </div>
+            <div class="swiper-slide slide" style="background: url(img/slider2.jpg) no-repeat;">
+               <div class="content">
+                  <span>DRINKS</span>
+                  <h3>коллекция напитков Kyoto исследует новые и необычные вкусы, искусно подобранные для дополнения
+                     самых восхитительных блюд в меню</h3>
+                  <a asp-action="Menu" class="btn">ПОСМОТРЕТЬ</a>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+      </div>
+   </section>
+
+
+
+
+
+
+
+
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   <script src="script.js"></script>
+   
+</body>
+</html>
