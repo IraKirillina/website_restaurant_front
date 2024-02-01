@@ -27,8 +27,8 @@ var swiper = new Swiper(".food-slider", {
    centeredSlides: true,
    spaceBetween: 20,
    pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
    },
    breakpoints: {
       0: {
@@ -43,8 +43,8 @@ var swiper = new Swiper(".food-slider", {
    },
 });
 
-let previewContainer = document.querySelector('.food-preview-container');
-let previewBox = previewContainer.querySelectorAll('.food-preview');
+let previewContainer = document.querySelector('.food-prev-container');
+let previewBox = previewContainer.querySelectorAll('.food-prev');
 
 document.querySelectorAll('.food .slide').forEach(food => {
    food.onclick = () => {
@@ -57,4 +57,23 @@ document.querySelectorAll('.food .slide').forEach(food => {
          }
       });
    };
+});
+
+previewContainer.querySelector('#close-prev').onclick = () => {
+   previewContainer.style.display = 'none';
+   previewBox.forEach(close => {
+      close.classList.remove('active');
+   });
+};
+
+var swiper = new Swiper(".menu-slider", {
+   grabCursor: true,
+   loop: true,
+   autoHeight: true,
+   centeredSlides: true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+   },
 });
