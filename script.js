@@ -1,14 +1,23 @@
-let navbar = document.querySelector('.header .navbar');
+$(function(){
+   $('#header1').load('header.html')
+});
+$(function(){
+   $('#footer').load('footer.html')
+});
+
+
+
+let navbar = document.querySelector('.header  .navbar');
 let menuBtn = document.querySelector('#menu-btn');
 
 menuBtn.onclick = () => {
-    menuBtn.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
+   menuBtn.classList.toggle('fa-times');
+   navbar.classList.toggle('active');
 };
 
 window.onscroll = () => {
-    menuBtn.classList.remove('fa-times');
-    navbar.classList.remove('active');
+   menuBtn.classList.remove('fa-times');
+   navbar.classList.remove('active');
 };
 
 var swiper = new Swiper(".home-slider", {
@@ -77,3 +86,4 @@ var swiper = new Swiper(".menu-slider", {
       clickable: true,
    },
 });
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KYOTO</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+   
+</head>
+<body>
+
+   <div id="header1"></div>
+   <section class="order" id="order">
+
+      <div class="heading">
+         <span>Заказать сейчас</span>
+         <h3>Быстрая доставка до дома</h3>
+      </div>
+   
+      <form>
+         <div class="box-container">
+            <div class="box">
+               <div class="inputBox">
+                  <span>Имя</span>
+                  <input type="text" name="Name" placeholder="Введите ваше имя" required
+                  pattern="^[А-Яа-яЁё]+$">
+               </div>
+               <div class="inputBox">
+                  <span>Номер телефона</span>
+                  <input type="text" name="Phone" placeholder="Введите ваш номер телефона" pattern="[8][0-9]{3}[0-9]{3}[0-9]{4}" required>
+               </div>
+               <div class="inputBox">
+                  <span>Блюдо</span>
+                  <input type="text" name="NameOfFood" placeholder="Введите назавание блюда" required>
+               </div>
+            </div>
+            <div class="box">
+               <div class="inputBox">
+                  <span>Напиток</span>
+                  <input type="text" name="NameOfDrink" placeholder="Введите название напитка" required>
+               </div>
+               <div class="inputBox">
+                  <span>Адрес</span>
+                  <textarea name="Adress" placeholder="Введите ваш адрес" cols="30" rows="6" required></textarea>
+               </div>
+            </div>
+         </div>
+         <div class="body_button">
+            <input type="submit" value="Отправить заказ" name="comment_add" class="button_hola">                   
+         </div>
+     </form>
+   </section>
+
+   <div id="footer"></div>
+</body>
+
+</html>
