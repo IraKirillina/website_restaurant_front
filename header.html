@@ -7,7 +7,8 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
    <link rel="stylesheet" href="style.css">
-
+   <script src="script.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
    <!-- header starts -->
@@ -26,5 +27,19 @@
       <div id="menu-btn" class="fas fa-bars"></div>
 
    </section>   
+   <script>
+      let navbar = document.querySelector('.header  .navbar');
+      let menuBtn = document.querySelector('#menu-btn');
+
+      menuBtn.onclick = () => {
+         menuBtn.classList.toggle('fa-times');
+         navbar.classList.toggle('active');
+      };
+
+      window.onscroll = () => {
+         menuBtn.classList.remove('fa-times');
+         navbar.classList.remove('active');
+      };
+   </script>
 </body>
 </html>
